@@ -273,14 +273,17 @@
 <p class="admonition-title">This is an important password</p>
 <p>Knowing your site's API Secret gives anybody full access to your Nightscout data, allows uploading to your site and uncontrolled access. Make sure you keep this password secret and avoid exposing it publicly.</p>
 </div>
-<p>A passphrase that must be at least 12 characters long.</p>
+<ul>
+<li>The API_SECRET must be at least 12 characters long, but making it even longer makes it more secure</li>
+<li>Use a mix of small and CAPITAL letters, numbers and non-alphanumeric characters such as !#%&amp;/()= in the API_SECRET
+  <em>Note: make sure your uploader and downloaders can handle special characters, you might need to express them using <a href="https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters">Percent encoding</a></em></li>
+<li>Consider generating the API_SECRET using a password manager</li>
+</ul>
 <pre><code>MyV3ry53cr37
 </code></pre>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
 <p>This is the passcode that will be required by the uploader app (if any) to send data to your site, and that will allow you to modify your site parameters from the web interface. Keep it secret, only share it with trusted people, change it if you believe it's been exposed publicly. Minimum length is 12 characters, don't make it too long and do not put special characters in it (better stick to letters and numbers). It is case-sensitive. </p>
-</div>
+<p>If you change your <code>API_SECRET</code> all your <a href="../security/#create-authentication-tokens-for-users">access tokens</a> will change. Make your you update your devices and send the new token link to those you allowed to access your Nightscout</p>
 <p></br></p>
 <h5 id="mongo_collection-entries"><strong>MONGO_COLLECTION</strong> ( <code>entries</code>)<a class="headerlink" href="#mongo_collection-entries" title="Permanent link">⌁</a></h5>
 <div class="admonition warning">
@@ -302,11 +305,11 @@
 <pre><code>careportal basal dbsize
 </code></pre>
 
-<p>Include the word <code>bridge</code> here if you are receiving data from the Dexcom Share service.</p>
+<p>Include the word <code>bridge</code> here <strong>only</strong> if you are receiving data from the Dexcom Share service.</p>
 <pre><code>careportal basal dbsize bridge
 </code></pre>
 
-<p>Include <code>mmconnect</code> if you are bridging from the MiniMed CareLink service.</p>
+<p>Include <code>mmconnect</code> <strong>only</strong> if you are bridging from the MiniMed CareLink service.</p>
 <pre><code>careportal basal dbsize mmconnect
 </code></pre>
 
