@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Installation - Nightscout</title>
+        <title>Classic DIY Installation - Nightscout</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -56,7 +56,11 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Installation</a>
+    <a href="./" class="dropdown-item active">Classic DIY Installation</a>
+</li>
+                                    
+<li>
+    <a href="../../vendors/T1Pal/new_user/" class="dropdown-item">Nightscout as a service</a>
 </li>
                                 </ul>
                             </li>
@@ -73,7 +77,7 @@
 </li>
                                     
 <li>
-    <a href="../security/" class="dropdown-item">Secure your site</a>
+    <a href="../security/" class="dropdown-item">Security</a>
 </li>
                                     
 <li>
@@ -90,10 +94,6 @@
                                     
 <li>
     <a href="../close_loop/" class="dropdown-item">Closed-loop Systems</a>
-</li>
-                                    
-<li>
-    <a href="../security/" class="dropdown-item">Security</a>
 </li>
                                 </ul>
                             </li>
@@ -120,10 +120,6 @@
 <li>
     <a href="../admin_tools/" class="dropdown-item">Admin Tools</a>
 </li>
-                                    
-<li>
-    <a href="../security/" class="dropdown-item">Security</a>
-</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -140,6 +136,10 @@
                                     
 <li>
     <a href="../../update/newdatabase/" class="dropdown-item">Attach a new Atlas database</a>
+</li>
+                                    
+<li>
+    <a href="../../update/upd_stack/" class="dropdown-item">Update Heroku Stack</a>
 </li>
                                 </ul>
                             </li>
@@ -174,7 +174,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../setup_variables/" class="nav-link">
+                                <a rel="next" href="../../vendors/T1Pal/new_user/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -227,8 +227,13 @@
 
 <h1 id="new-nightscout-users">New Nightscout Users<a class="headerlink" href="#new-nightscout-users" title="Permanent link">⌁</a></h1>
 <p></br></p>
-<p>Nightscout is DIY (Do It Yourself), if you don’t feel confident that you have the necessary skills, give it a try. You’ll find people that is willingly to help you setting it up in many Facebook groups. For free. Paying it forward.</p>
-<p>If you want to <a href="https://github.com/nightscout/nightscout.github.io/wiki/Can-I-sell-Nightscout">sell installations</a>, keep in mind you will be legally liable and can easily be sued by your buyers should anything bad happen to them because of Nightscout. Nightscout is not approved by FDA, CE, ... this is the reason why it's DIY.</p>
+<p>Welcome to Nightscout!
+There are many ways to get started with Nightscout that the Nightscout community supports.
+Nightscout is DIY (Do It Yourself), even if you don’t feel confident that you have the necessary skills, give it a try.
+You’ll find people that are willing to help you setting it up in many Facebook groups. For free. Paying it forward.</p>
+<p>If you find it too complex or the maintenance too demanding you might be interested in <a href="../../#nightscout-as-a-service">Nightscout as a service</a>.</p>
+<p>Components, costs and complexity will depend on the solution you want to implement.</p>
+<p>For an overview of other possibilities, see <a href="../../vendors">vendors</a>.</p>
 <p></br></p>
 <h3 id="security-and-safekeeping">Security and safekeeping<a class="headerlink" href="#security-and-safekeeping" title="Permanent link">⌁</a></h3>
 <p>It's <strong>highly important</strong> you understand you have to take computer security seriously when setting up Nightscout. We assume you have full legal ownership of all data being stored in your installation of Nightscout and that there are thus no liabilities you'd need to respond to regarding the data. Depending on how you use Nightscout, an unauthorized user could cause harm by for example changing the CGM data shown by Nightscout. We have no evidence of this having ever happened to anyone, but to keep it that way, take the following guidelines to heart:</p>
@@ -243,7 +248,10 @@
 <p>If you want to read more about Nightscout security, including about additional configuration options to make your installation more secure, please check our <a href="../security/">security guide</a>.</p>
 <p>Print this <a href="../NightscoutDataRecord.pdf">document</a> to record all information during installation. Store it together securely with your diabetes documentation.</p>
 <p></br></p>
+<hr />
 <h4 id="here-is-a-step-by-step-guide-for-completing-your-own-nightscout-site-diy-style"><strong>Here is a step-by-step guide for completing your own Nightscout site DIY style.</strong><a class="headerlink" href="#here-is-a-step-by-step-guide-for-completing-your-own-nightscout-site-diy-style" title="Permanent link">⌁</a></h4>
+<p><span style="font-size:smaller;"><strong>APPLIES TO:</strong></span> <img src="../../vendors/img/Heroku.png" style="zoom:80%;" />+<img src="../../vendors/img/Atlas.png" style="zoom:80%;" /></p>
+<hr />
 <p></br></p>
 <h3 id="create-your-heroku-github-and-atlas-accounts-from-a-computer">Create your Heroku, GitHub, and Atlas accounts from a computer.<a class="headerlink" href="#create-your-heroku-github-and-atlas-accounts-from-a-computer" title="Permanent link">⌁</a></h3>
 <p>Do not change device/computer/browser during the setup process!</p>
@@ -307,6 +315,9 @@
 <p></br></p>
 <p>f) Click <code>CLICK HERE TO PROCEED</code></p>
 <p><img src="..\img\NewNS12.png" style="zoom:70%;" /></p>
+<p>Read and accept Salesforce terms of service.</p>
+<p>Se sei residente in Italia, abilita l'interruttore <code>Are you domiciled in Italy</code>, leggi e accetta le condizioni supplementari.</p>
+<p><img src="..\img\NewNS12a.png" style="zoom:70%;" /></p>
 <p></br></p>
 <p>g) Your Heroku page will open, click on your profile picture, in the top right corner, and select <code>Account Settings</code></p>
 <p><img src="..\img\NewNS13.png" style="zoom:80%;" /></p>
@@ -477,6 +488,10 @@ function Generate()
 <p><img src="..\img\NewNS34.png" style="zoom:80%;" /></p>
 <p></br></p>
 <p>h) If you want to link your Dexcom Share account as a data source, complete the following lines:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you use a DIY closed loop system it is recommended that you let it upload to Nightscout.</p>
+</div>
 <p><img src="..\img\NewNS35.png" style="zoom:80%;" /></p>
 <p></br></p>
 <div class="admonition info">
@@ -492,8 +507,8 @@ function Generate()
 <p>You need to have at least one follower to use Dexcom Share. See <a href="../../uploader/setup/#dexcom">here</a>.</p>
 </div>
 <p></br></p>
-<p>i) If you want to link your CareLink account as a data source <em>(currently not functional with Heroku)</em>, complete the following lines:</p>
-<p><img src="..\img\NewNS36.png" style="zoom:80%;" /></p>
+<p>i) Linking your CareLink account as a data source is <strong>not functional anymore with Heroku</strong>. Do not use the plugin below. There are alternative solutions with an Android phone with a <a href="https://github.com/benceszasz/xDripCareLinkFollower">private version of xDrip+</a>, a <a href="https://github.com/FredMK/minimed-connect-to-nightscout-wrapper">computer</a> or a <a href="https://github.com/psonnera/minimed-connect-to-nightscout-wrapper/wiki">Raspberry Pi</a> to bridge CareLink to Nightscout.</p>
+<p><img src="..\img\NewNS36.png" style="zoom:60%;" /></p>
 <p></br></p>
 <p>j) Select the units you’re using in <code>DISPLAY_UNITS</code> acceptable choices are <code>mg/dl</code> or <code>mmol/L</code> (or just <code>mmol</code>).</p>
 <p><img src="..\img\NewNS37.png" style="zoom:80%;" /></p>
@@ -557,7 +572,39 @@ function Generate()
 <p></br></br></p>
 <h2 id="step-5-uploader-setup">Step 5: Uploader setup<a class="headerlink" href="#step-5-uploader-setup" title="Permanent link">⌁</a></h2>
 <p></br></p>
-<p>Continue to <a href="../../uploader/setup/">uploader</a> setup.</p></div>
+<p>Continue to <a href="../../uploader/setup/">uploader</a> setup.</p>
+<p></br></p>
+<hr />
+<h3 id="editing-config-vars-in-heroku">Editing Config Vars in Heroku<a class="headerlink" href="#editing-config-vars-in-heroku" title="Permanent link">⌁</a></h3>
+<p></br></p>
+<p>Once Nightscout deployed, you can access your variables from <a href="https://id.heroku.com/login">Heroku</a> in order to change or customize your site.
+Variables are described <a href="../setup_variables/#nightscout-config-vars">here</a>.</p>
+<ul>
+<li>Select your app</li>
+</ul>
+<p><img src="../img/SetupNS00.png" style="zoom:80%;" /></p>
+<p></br></p>
+<ul>
+<li>Click <code>Settings</code></li>
+</ul>
+<p><img src="../img/SetupNS01.png" style="zoom:80%;" /></p>
+<p></br></p>
+<ul>
+<li>Scroll down and click <code>Reveal Config Vars</code></li>
+</ul>
+<p><img src="../img/SetupNS02.png" style="zoom:80%;" /></p>
+<p></br></p>
+<ul>
+<li>You can modify the values clicking on the pen icon</li>
+</ul>
+<p><img src="../img/SetupNS03.png" style="zoom:80%;" /></p>
+<p></br></p>
+<ul>
+<li>Change the contents of <code>Value</code>  as needed then click <code>Save Changes</code></li>
+</ul>
+<p><img src="..\img\SetupNS04.png" style="zoom:80%;" /></p>
+<p></br></p>
+<p>Changing a variable and saving a new value will restart your site, if the change is not actuated you might also want to <a href="../../troubleshoot/troublehoot#restart-all-dynos">restart all dynos</a>.</p></div>
             </div>
         </div>
 
